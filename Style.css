@@ -1,0 +1,1341 @@
+@charset "UTF-8";
+*{
+  margin: 2;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.image-container {
+  position: relative;
+  
+}
+
+.progress-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 109px;
+}
+
+p{
+  font-size: 10px;
+  
+}
+
+body,html{
+  background: url('imgs/Facebook.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+}
+
+
+.progress-bar {
+  height: 10px; /* Ajuste a altura da barra de progresso conforme necessário */
+  background-color: pink; /* Cor padrão */
+  transition: width 2s linear, background-color 2s linear;
+   max-width: 105px;
+   border-radius: 5px;
+   
+}
+
+  .progress-container {
+    width: 130px;
+    height: 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin: auto;
+    border: 1px solid #04BFBF;
+  }
+
+  .progress-bar {
+    height: 100%;
+    background-color:white; /* Cor padrão */
+    transition: width 2s linear, background-color 2s linear;
+    
+  }
+  
+      .bar {
+    width: 200px;
+    height: 20px;
+    background-color: lightblue;
+    margin-bottom: 10px;
+    
+  }
+  
+    .gallery {
+     background: black;
+      justify-content: space-between;
+      margin: auto;
+      min-width: 330px;
+      
+      opacity: .9;
+    }
+    .gallery img {
+      width: calc(25% - 10px); /* 4 colunas responsivas com espaço entre elas */
+      margin-bottom: 10px;
+      transition: opacity 0.3s ease;
+      
+      
+    }
+    .load-more {
+      display: none; /* ocultar o botão inicialmente */
+      text-align: center;
+    }
+    
+        /* Adicionando estilo para linhas de 4 imagens */
+    @media screen and (min-width: 1025px) {
+      #Logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      #Logo img{
+        width: 350px;
+        border-radius: 10px;
+        border: 1px solid darkred;
+      }
+      
+      .gallery{
+        
+        border-radius:15px ;
+        width: 90%;
+       
+      }
+      .gallery div p{
+        color: black;
+      }
+      
+      .gallery img {
+        width: calc(90% - 10px);
+        border: 3px solid #04BFBF;
+        border-radius: 15px 15px;
+        margin: 0px 10px 10px 10px;
+        max-width: 390px;
+        max-height: 300px;
+        display: flex;
+        justify-items: center;
+        
+      }
+      .gallery #div1 img{
+        margin-top: 20px;
+        
+      }
+      .gallery #div1{
+        border: 2px solid #04BFBF;
+        border-radius: 10px;
+        margin: auto;
+        width: 100%;
+        
+      }
+        
+        .gallery div{
+          width: 450px;
+          max-width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          
+    
+  }
+        .image-container {
+        flex-basis: calc(50% - 10px); /* Cada item ocupa metade da largura da linha, com um espaço de 10px entre eles */
+        margin-bottom: 0px; /* Espaçamento inferior entre as linhas */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens horizontalmente */
+        
+      }
+      
+      .progress-container {
+        min-width: 40%;
+        margin-top: 10px; /* Espaçamento superior entre a imagem e a barra de progresso */
+        display: flex;
+        align-items: center; /* Centraliza os itens verticalmente */
+        position: relative;
+        height: 50px;
+        margin-bottom: 10px;
+        font-size: 300px;
+      
+      }
+      .progress-bar {
+    height: 100%;
+    
+    background-color:white; /* Cor padrão */
+    transition: width 2s linear, background-color 2s linear;
+    
+    
+  }
+  
+      .bar {
+    width: 200px;
+    height: 20px;
+    background-color: lightblue;
+    margin-bottom: 10px;
+    
+  }
+      
+      
+      
+      #imageContainer {
+  position: relative;
+  width: 970px; /* Largura da imagem */
+  height: 100%; /* Altura da imagem */
+  padding-top: 10px;
+  margin: auto;
+  
+  
+  
+}
+#imageContainer #Telatigre{
+  width: 970px;
+  border-radius: 15px;
+  border: 2px solid #04BFBF;
+}
+#imageContainer #barsContainer div{
+  background: #E7AF8C;
+  margin-top: 5px;
+  width: 740px;
+  height: 160px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid darkred;
+  border-radius: 5px;
+  
+}
+#imageContainer #barsContainer img{
+  width: 110px;
+  padding-right: 10px;
+}
+
+#barsContainer {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.bar {
+  color: darkred;
+  font-size: 18px;
+  margin-bottom: 10px;
+  
+}
+span{
+  font-size: 35px;
+}
+
+
+#updateButton {
+  position: absolute;
+  bottom: 4.4%;
+  left: 7.5%;
+  width: 825px;
+  height: 105px;
+  background-color: #2FA61C;
+  color: white;
+  font-size: 35px;
+}
+      }
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+    @media screen and (max-width: 450px) {
+      
+      #Logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      #Logo img{
+        width: 180px;
+        border-radius: 10px;
+        border: 1px solid darkred;
+      }
+      
+      .gallery{
+        
+        border-radius:15px ;
+        width: 100%;
+       
+      }
+      .gallery div p{
+        color: black;
+      }
+      
+      .gallery img {
+        width: calc(90% - 10px);
+        border: 3px solid #04BFBF;
+        border-radius: 15px 15px;
+        margin: 0px 10px 10px 10px;
+        max-width: 300px;
+        max-height: 300px;
+        display: flex;
+        justify-items: center;
+        
+      }
+      .gallery #div1 img{
+        margin-top: 20px;
+        
+      }
+      .gallery #div1{
+        border: 2px solid #04BFBF;
+        border-radius: 10px;
+        margin: auto;
+        width: 100%;
+        
+      }
+        
+        .gallery div{
+          width: 450px;
+          max-width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          
+    
+  }
+        .image-container {
+        flex-basis: calc(50% - 10px); /* Cada item ocupa metade da largura da linha, com um espaço de 10px entre eles */
+        margin-bottom: 0px; /* Espaçamento inferior entre as linhas */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens horizontalmente */
+        
+      }
+      
+      .progress-container {
+        width: 100%;
+        margin-top: 10px; /* Espaçamento superior entre a imagem e a barra de progresso */
+        display: flex;
+        align-items: center; /* Centraliza os itens verticalmente */
+        position: relative;
+        height: 25px;
+        margin-bottom: 10px;
+      }
+      
+      
+      
+      #imageContainer {
+  position: relative;
+  width: 375px; /* Largura da imagem */
+  height: 100%; /* Altura da imagem */
+  padding-top: 10px;
+  margin: auto;
+  
+  
+  
+}
+#imageContainer #Telatigre{
+  width: 375px;
+  border-radius: 15px;
+  border: 2px solid #04BFBF;
+}
+#imageContainer #barsContainer div{
+  background: #E7AF8C;
+  margin-top: 5px;
+  width: 300px;
+  height: 70px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid darkred;
+  border-radius: 5px;
+  
+}
+#imageContainer #barsContainer img{
+  width: 50px;
+  padding-right: 10px;
+}
+
+#barsContainer {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.bar {
+  color: darkred;
+  font-size: 18px;
+  margin-bottom: 10px;
+  
+}
+
+
+#updateButton {
+  position: absolute;
+  bottom: 4.8%;
+  left: 7.6%;
+  width: 318px;
+  height: 41px;
+  background-color: #2FA61C;
+  color: white;
+}
+      
+
+      
+}
+
+
+
+@media screen and (min-width: 450px) and (max-width: 550px) {
+  
+  
+  #Logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      #Logo img{
+        width: 180px;
+        border-radius: 10px;
+        border: 1px solid darkred;
+      }
+      
+      .gallery{
+        
+        border-radius:15px ;
+        width: 100%;
+       
+      }
+      .gallery div p{
+        color: black;
+      }
+      
+      .gallery img {
+        width: calc(90% - 10px);
+        border: 3px solid #04BFBF;
+        border-radius: 15px 15px;
+        margin: 0px 10px 10px 10px;
+        max-width: 300px;
+        max-height: 300px;
+        display: flex;
+        justify-items: center;
+        
+      }
+      .gallery #div1 img{
+        margin-top: 20px;
+        
+      }
+      .gallery #div1{
+        border: 2px solid #04BFBF;
+        border-radius: 10px;
+        margin: auto;
+        width: 100%;
+        
+      }
+        
+        .gallery div{
+          width: 450px;
+          max-width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          
+    
+  }
+        .image-container {
+        flex-basis: calc(50% - 10px); /* Cada item ocupa metade da largura da linha, com um espaço de 10px entre eles */
+        margin-bottom: 0px; /* Espaçamento inferior entre as linhas */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens horizontalmente */
+        
+      }
+      
+      .progress-container {
+        width: 100%;
+        margin-top: 10px; /* Espaçamento superior entre a imagem e a barra de progresso */
+        display: flex;
+        align-items: center; /* Centraliza os itens verticalmente */
+        position: relative;
+        height: 25px;
+        margin-bottom: 10px;
+      }
+      
+      
+      
+      #imageContainer {
+  position: relative;
+  width: 430px; /* Largura da imagem */
+  height: 100%; /* Altura da imagem */
+  padding-top: 10px;
+  margin: auto;
+  
+  
+  
+}
+#imageContainer #Telatigre{
+  width: 430px;
+  border-radius: 15px;
+  border: 2px solid #04BFBF;
+}
+#imageContainer #barsContainer div{
+  background: #E7AF8C;
+  margin-top: 5px;
+  width: 340px;
+  height: 70px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid darkred;
+  border-radius: 5px;
+  
+}
+#imageContainer #barsContainer img{
+  width: 50px;
+  padding-right: 10px;
+}
+
+#barsContainer {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.bar {
+  color: darkred;
+  font-size: 18px;
+  margin-bottom: 10px;
+  
+}
+
+
+#updateButton {
+  position: absolute;
+  bottom: 4.7%;
+  left: 7.5%;
+  width: 365px;
+  height: 47px;
+  background-color: #2FA61C;
+  color: white;
+  font-size: 18px;
+}
+  
+}
+
+
+@media screen and (min-width: 550px) and (max-width: 650px) {
+  
+  #Logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      #Logo img{
+        width: 180px;
+        border-radius: 10px;
+        border: 1px solid darkred;
+      }
+      
+      .gallery{
+        background: black;
+        border-radius:15px ;
+        width: 90%;
+       
+      }
+      .gallery div p{
+        color: black;
+      }
+      
+      .gallery img {
+        width: calc(90% - 10px);
+        border: 3px solid #04BFBF;
+        border-radius: 15px 15px;
+        margin: 0px 10px 10px 10px;
+        max-width: 300px;
+        max-height: 300px;
+        display: flex;
+        justify-items: center;
+        
+      }
+      .gallery #div1 img{
+        margin-top: 20px;
+        
+      }
+      .gallery #div1{
+        border: 2px solid #04BFBF;
+        border-radius: 10px;
+        margin: auto;
+        width: 100%;
+        
+      }
+        
+        .gallery div{
+          width: 450px;
+          max-width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          
+    
+  }
+        .image-container {
+        flex-basis: calc(50% - 10px); /* Cada item ocupa metade da largura da linha, com um espaço de 10px entre eles */
+        margin-bottom: 0px; /* Espaçamento inferior entre as linhas */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens horizontalmente */
+        
+      }
+      
+      .progress-container {
+        width: 100%;
+        margin-top: 10px; /* Espaçamento superior entre a imagem e a barra de progresso */
+        display: flex;
+        align-items: center; /* Centraliza os itens verticalmente */
+        position: relative;
+        height: 30px;
+        margin-bottom: 10px;
+      }
+      .progress-bar {
+    height: 100%;
+    background-color:white; /* Cor padrão */
+    transition: width 2s linear, background-color 2s linear;
+    font-size: 20px;
+    
+  }
+  
+      .bar {
+    width: 200px;
+    height: 20px;
+    background-color: lightblue;
+    margin-bottom: 10px;
+    
+  }
+      
+      
+      
+      #imageContainer {
+  position: relative;
+  width: 520px; /* Largura da imagem */
+  height: 100%; /* Altura da imagem */
+  padding-top: 10px;
+  margin: auto;
+  
+  
+  
+}
+#imageContainer #Telatigre{
+  width: 520px;
+  border-radius: 15px;
+  border: 2px solid #04BFBF;
+}
+#imageContainer #barsContainer div{
+  background: #E7AF8C;
+  margin-top: 5px;
+  width: 410px;
+  height: 90px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid darkred;
+  border-radius: 5px;
+  
+}
+#imageContainer #barsContainer img{
+  width: 70px;
+  padding-right: 10px;
+}
+
+#barsContainer {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.bar {
+  color: darkred;
+  font-size: 18px;
+  margin-bottom: 10px;
+  
+}
+span{
+  font-size: 20px;
+}
+
+
+#updateButton {
+  position: absolute;
+  bottom: 4.6%;
+  left: 7.5%;
+  width: 441px;
+  height: 56px;
+  background-color: #2FA61C;
+  color: white;
+  font-size: 20px;
+}
+}
+
+
+
+
+
+
+@media screen and (min-width: 650px) and (max-width: 750px) {
+  #Logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      #Logo img{
+        width: 220px;
+        border-radius: 10px;
+        border: 1px solid darkred;
+      }
+      
+      .gallery{
+        
+        border-radius:15px ;
+        width: 90%;
+       
+      }
+      .gallery div p{
+        color: black;
+      }
+      
+      .gallery img {
+        width: calc(90% - 10px);
+        border: 3px solid #04BFBF;
+        border-radius: 15px 15px;
+        margin: 0px 10px 10px 10px;
+        max-width: 390px;
+        max-height: 300px;
+        display: flex;
+        justify-items: center;
+        
+      }
+      .gallery #div1 img{
+        margin-top: 20px;
+        
+      }
+      .gallery #div1{
+        border: 2px solid #04BFBF;
+        border-radius: 10px;
+        margin: auto;
+        width: 100%;
+        
+      }
+        
+        .gallery div{
+          width: 450px;
+          max-width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          
+    
+  }
+        .image-container {
+        flex-basis: calc(50% - 10px); /* Cada item ocupa metade da largura da linha, com um espaço de 10px entre eles */
+        margin-bottom: 0px; /* Espaçamento inferior entre as linhas */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens horizontalmente */
+        
+      }
+      
+      .progress-container {
+        width: 100%;
+        margin-top: 10px; /* Espaçamento superior entre a imagem e a barra de progresso */
+        display: flex;
+        align-items: center; /* Centraliza os itens verticalmente */
+        position: relative;
+        height: 30px;
+        margin-bottom: 10px;
+      }
+      .progress-bar {
+    height: 100%;
+    background-color:white; /* Cor padrão */
+    transition: width 2s linear, background-color 2s linear;
+    font-size: 20px;
+    
+  }
+  
+      .bar {
+    width: 200px;
+    height: 20px;
+    background-color: lightblue;
+    margin-bottom: 10px;
+    
+  }
+      
+      
+      
+      #imageContainer {
+  position: relative;
+  width: 580px; /* Largura da imagem */
+  height: 100%; /* Altura da imagem */
+  padding-top: 10px;
+  margin: auto;
+  
+  
+  
+}
+#imageContainer #Telatigre{
+  width: 580px;
+  border-radius: 15px;
+  border: 2px solid #04BFBF;
+}
+#imageContainer #barsContainer div{
+  background: #E7AF8C;
+  margin-top: 5px;
+  width: 440px;
+  height: 90px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid darkred;
+  border-radius: 5px;
+  
+}
+#imageContainer #barsContainer img{
+  width: 70px;
+  padding-right: 10px;
+}
+
+#barsContainer {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.bar {
+  color: darkred;
+  font-size: 18px;
+  margin-bottom: 10px;
+  
+}
+span{
+  font-size: 25px;
+}
+
+
+#updateButton {
+  position: absolute;
+  bottom: 4.6%;
+  left: 7.5%;
+  width: 493px;
+  height: 60px;
+  background-color: #2FA61C;
+  color: white;
+  font-size: 25px;
+}
+}
+
+
+
+
+@media screen and (min-width: 750px) and (max-width: 850px) {
+  
+  
+  
+  #Logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      #Logo img{
+        width: 250px;
+        border-radius: 10px;
+        border: 1px solid darkred;
+      }
+      
+      .gallery{
+        
+        border-radius:15px ;
+        width: 90%;
+       
+      }
+      .gallery div p{
+        color: black;
+      }
+      
+      .gallery img {
+        width: calc(90% - 10px);
+        border: 3px solid #04BFBF;
+        border-radius: 15px 15px;
+        margin: 0px 10px 10px 10px;
+        max-width: 390px;
+        max-height: 300px;
+        display: flex;
+        justify-items: center;
+        
+      }
+      .gallery #div1 img{
+        margin-top: 20px;
+        
+      }
+      .gallery #div1{
+        border: 2px solid #04BFBF;
+        border-radius: 10px;
+        margin: auto;
+        width: 100%;
+        
+      }
+        
+        .gallery div{
+          width: 450px;
+          max-width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          
+    
+  }
+        .image-container {
+        flex-basis: calc(50% - 10px); /* Cada item ocupa metade da largura da linha, com um espaço de 10px entre eles */
+        margin-bottom: 0px; /* Espaçamento inferior entre as linhas */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens horizontalmente */
+        
+      }
+      
+      .progress-container {
+        width: 100%;
+        margin-top: 10px; /* Espaçamento superior entre a imagem e a barra de progresso */
+        display: flex;
+        align-items: center; /* Centraliza os itens verticalmente */
+        position: relative;
+        height: 35px;
+        margin-bottom: 10px;
+      }
+      .progress-bar {
+    height: 100%;
+    background-color:white; /* Cor padrão */
+    transition: width 2s linear, background-color 2s linear;
+    font-size: 20px;
+    
+  }
+  
+      .bar {
+    width: 200px;
+    height: 20px;
+    background-color: lightblue;
+    margin-bottom: 10px;
+    
+  }
+      
+      
+      
+      #imageContainer {
+  position: relative;
+  width: 640px; /* Largura da imagem */
+  height: 100%; /* Altura da imagem */
+  padding-top: 10px;
+  margin: auto;
+  
+  
+  
+}
+#imageContainer #Telatigre{
+  width: 640px;
+  border-radius: 15px;
+  border: 2px solid #04BFBF;
+}
+#imageContainer #barsContainer div{
+  background: #E7AF8C;
+  margin-top: 5px;
+  width: 490px;
+  height: 90px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid darkred;
+  border-radius: 5px;
+  
+}
+#imageContainer #barsContainer img{
+  width: 80px;
+  padding-right: 10px;
+}
+
+#barsContainer {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.bar {
+  color: darkred;
+  font-size: 18px;
+  margin-bottom: 10px;
+  
+}
+span{
+  font-size: 28px;
+}
+
+
+#updateButton {
+  position: absolute;
+  bottom: 4.6%;
+  left: 7.5%;
+  width: 543px;
+  height: 65px;
+  background-color: #2FA61C;
+  color: white;
+  font-size: 28px;
+}
+}
+
+@media screen and (min-width: 850px) and (max-width: 950px) {
+  
+  #Logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      #Logo img{
+        width: 280px;
+        border-radius: 10px;
+        border: 1px solid darkred;
+      }
+      
+      .gallery{
+        
+        border-radius:15px ;
+        width: 90%;
+       
+      }
+      .gallery div p{
+        color: black;
+      }
+      
+      .gallery img {
+        width: calc(90% - 10px);
+        border: 3px solid #04BFBF;
+        border-radius: 15px 15px;
+        margin: 0px 10px 10px 10px;
+        max-width: 390px;
+        max-height: 300px;
+        display: flex;
+        justify-items: center;
+        
+      }
+      .gallery #div1 img{
+        margin-top: 20px;
+        
+      }
+      .gallery #div1{
+        border: 2px solid #04BFBF;
+        border-radius: 10px;
+        margin: auto;
+        width: 100%;
+        
+      }
+        
+        .gallery div{
+          width: 450px;
+          max-width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          
+    
+  }
+        .image-container {
+        flex-basis: calc(50% - 10px); /* Cada item ocupa metade da largura da linha, com um espaço de 10px entre eles */
+        margin-bottom: 0px; /* Espaçamento inferior entre as linhas */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens horizontalmente */
+        
+      }
+      
+      .progress-container {
+        width: 100%;
+        margin-top: 10px; /* Espaçamento superior entre a imagem e a barra de progresso */
+        display: flex;
+        align-items: center; /* Centraliza os itens verticalmente */
+        position: relative;
+        height: 40px;
+        margin-bottom: 10px;
+      
+      }
+      .progress-bar {
+    height: 90%;
+    
+    background-color:white; /* Cor padrão */
+    transition: width 2s linear, background-color 2s linear;
+    font-size: 20px;
+    
+  }
+  
+      .bar {
+    width: 200px;
+    height: 20px;
+    background-color: lightblue;
+    margin-bottom: 10px;
+    
+  }
+      
+      
+      
+      #imageContainer {
+  position: relative;
+  width: 780px; /* Largura da imagem */
+  height: 100%; /* Altura da imagem */
+  padding-top: 10px;
+  margin: auto;
+  
+  
+  
+}
+#imageContainer #Telatigre{
+  width: 780px;
+  border-radius: 15px;
+  border: 2px solid #04BFBF;
+}
+#imageContainer #barsContainer div{
+  background: #E7AF8C;
+  margin-top: 5px;
+  width: 580px;
+  height: 110px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid darkred;
+  border-radius: 5px;
+  
+}
+#imageContainer #barsContainer img{
+  width: 90px;
+  padding-right: 10px;
+}
+
+#barsContainer {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.bar {
+  color: darkred;
+  font-size: 18px;
+  margin-bottom: 10px;
+  
+}
+span{
+  font-size: 30px;
+}
+
+
+#updateButton {
+  position: absolute;
+  bottom: 4.4%;
+  left: 7.5%;
+  width: 661px;
+  height: 83px;
+  background-color: #2FA61C;
+  color: white;
+  font-size: 30px;
+}
+  
+}
+
+
+
+@media screen and (min-width: 950px) and (max-width: 1024px) {
+  
+  #Logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      #Logo img{
+        width: 300px;
+        border-radius: 10px;
+        border: 1px solid darkred;
+      }
+      
+      .gallery{
+        
+        border-radius:15px ;
+        width: 90%;
+       
+      }
+      .gallery div p{
+        color: black;
+      }
+      
+      .gallery img {
+        width: calc(90% - 10px);
+        border: 3px solid #04BFBF;
+        border-radius: 15px 15px;
+        margin: 0px 10px 10px 10px;
+        max-width: 390px;
+        max-height: 300px;
+        display: flex;
+        justify-items: center;
+        
+      }
+      .gallery #div1 img{
+        margin-top: 20px;
+        
+      }
+      .gallery #div1{
+        border: 2px solid #04BFBF;
+        border-radius: 10px;
+        margin: auto;
+        width: 100%;
+        
+      }
+        
+        .gallery div{
+          width: 450px;
+          max-width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          
+    
+  }
+        .image-container {
+        flex-basis: calc(50% - 10px); /* Cada item ocupa metade da largura da linha, com um espaço de 10px entre eles */
+        margin-bottom: 0px; /* Espaçamento inferior entre as linhas */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens horizontalmente */
+        
+      }
+      
+      .progress-container {
+        width: 100%;
+        margin-top: 10px; /* Espaçamento superior entre a imagem e a barra de progresso */
+        display: flex;
+        align-items: center; /* Centraliza os itens verticalmente */
+        position: relative;
+        height: 100%;
+        margin-bottom: 10px;
+        
+      
+      }
+      .progress-bar {
+    height: 100%;
+    
+    background-color:white; /* Cor padrão */
+    transition: width 2s linear, background-color 2s linear;
+    font-size: 200px;
+    font-size: 30px;
+    
+  }
+  
+      .bar {
+    width: 200px;
+    height: 20px;
+    background-color: lightblue;
+    margin-bottom: 10px;
+    
+  }
+      
+      
+      
+      #imageContainer {
+  position: relative;
+  width: 890px; /* Largura da imagem */
+  height: 100%; /* Altura da imagem */
+  padding-top: 10px;
+  margin: auto;
+  
+  
+  
+}
+#imageContainer #Telatigre{
+  width: 890px;
+  border-radius: 15px;
+  border: 2px solid #04BFBF;
+}
+#imageContainer #barsContainer div{
+  background: #E7AF8C;
+  margin-top: 5px;
+  width: 690px;
+  height: 140px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid darkred;
+  border-radius: 5px;
+  
+}
+#imageContainer #barsContainer img{
+  width: 110px;
+  padding-right: 10px;
+}
+
+#barsContainer {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.bar {
+  color: darkred;
+  font-size: 18px;
+  margin-bottom: 10px;
+  
+}
+span{
+  font-size: 35px;
+}
+
+
+#updateButton {
+  position: absolute;
+  bottom: 4.4%;
+  left: 7.5%;
+  width: 755px;
+  height: 93px;
+  background-color: #2FA61C;
+  color: white;
+  font-size: 35px;
+}
+  
+}
+        
+  
+      
+  
