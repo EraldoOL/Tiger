@@ -1,0 +1,54 @@
+.container {
+  text-align: center;
+}
+
+#horarios {
+  width: 330px;
+  height: 300px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#horarios-container{
+  
+  
+}
+
+.coluna {
+  width: 100%; /* Largura da coluna */
+  height: 200px; /* Altura da coluna */
+  border-left: 1px solid #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.coluna:first-child {
+  border-left: none;
+  
+}
+
+.segmento {
+  width: calc(100% / 5); /* Divide a coluna em 5 partes */
+  height: 100%;
+  float: left; /* Faz com que os segmentos fiquem um ao lado do outro */
+  border-right: 1px solid #000;
+}
+
+.segmento:last-child {
+  border-right: none;
+}
+
+.coluna h2 {
+  margin: 0;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.verde {
+  color: green;
+}

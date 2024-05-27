@@ -9,6 +9,153 @@
   position: relative;
   
 }
+/*#updateButton1 {
+  position: absolute;
+  bottom: 4.7%;
+  left: 7.5%;
+  width: 365px;
+  height: 47px;
+  background-color: #2FA61C;
+  color: white;
+  font-size: 18px;
+}
+#imageContainer #barsContainer1 div{
+  background: #E7AF8C;
+  margin-top: 5px;
+  width: 300px;
+  height: 70px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid darkred;
+  border-radius: 5px;
+  
+}
+#imageContainer #barsContainer1 img{
+  width: 50px;
+  padding-right: 10px;
+}
+
+#barsContainer1 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+#updateButton2 {
+  position: absolute;
+  bottom: 4.7%;
+  left: 7.5%;
+  width: 365px;
+  height: 47px;
+  background-color: #2FA61C;
+  color: white;
+  font-size: 18px;
+}
+#imageContainer #barsContainer2 div{
+  background: #E7AF8C;
+  margin-top: 5px;
+  width: 300px;
+  height: 70px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid darkred;
+  border-radius: 5px;
+  
+}
+#imageContainer #barsContainer2 img{
+  width: 50px;
+  padding-right: 10px;
+}
+
+#barsContainer2 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+#updateButton3 {
+  position: absolute;
+  bottom: 4.7%;
+  left: 7.5%;
+  width: 365px;
+  height: 47px;
+  background-color: #2FA61C;
+  color: white;
+  font-size: 18px;
+}
+#imageContainer #barsContainer3 div{
+  background: #E7AF8C;
+  margin-top: 5px;
+  width: 300px;
+  height: 70px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid darkred;
+  border-radius: 5px;
+  
+}
+#imageContainer #barsContainer3 img{
+  width: 50px;
+  padding-right: 10px;
+}
+
+#barsContainer3 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+#updateButton4 {
+  position: absolute;
+  bottom: 4.7%;
+  left: 7.5%;
+  width: 365px;
+  height: 47px;
+  background-color: #2FA61C;
+  color: white;
+  font-size: 18px;
+}
+#imageContainer #barsContainer4 div{
+  background: #E7AF8C;
+  margin-top: 5px;
+  width: 300px;
+  height: 70px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid darkred;
+  border-radius: 5px;
+  
+}
+#imageContainer #barsContainer4 img{
+  width: 50px;
+  padding-right: 10px;
+}
+
+#barsContainer4 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .progress-container {
   position: absolute;
@@ -243,6 +390,86 @@ span{
   color: white;
   font-size: 35px;
 }
+
+#updateButton1{
+  position: absolute;
+  bottom: 4.4%;
+  left: 7.5%;
+  width: 825px;
+  height: 105px;
+  background-color: #2FA61C;
+  color: white;
+  font-size: 35px;
+}
+
+#imageContainer #barsContainer1 div{
+  background: #E7AF8C;
+  margin-top: 5px;
+  width: 740px;
+  height: 160px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid darkred;
+  border-radius: 5px;
+  
+}
+#imageContainer #barsContainer1 img{
+  width: 110px;
+  padding-right: 10px;
+}
+
+#barsContainer1 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+
+
+
+
+#updateButton2 {
+  position: absolute;
+  bottom: 4.4%;
+  left: 7.5%;
+  width: 825px;
+  height: 105px;
+  background-color: #2FA61C;
+  color: white;
+  font-size: 35px;
+}
+#updateButton3 {
+  position: absolute;
+  bottom: 4.4%;
+  left: 7.5%;
+  width: 825px;
+  height: 105px;
+  background-color: #2FA61C;
+  color: white;
+  font-size: 35px;
+}
+#updateButton4 {
+  position: absolute;
+  bottom: 4.4%;
+  left: 7.5%;
+  width: 825px;
+  height: 105px;
+  background-color: #2FA61C;
+  color: white;
+  font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+
       }
     
     
@@ -389,6 +616,175 @@ span{
   background-color: #2FA61C;
   color: white;
 }
+
+
+#updateButton1{
+  position: absolute;
+  bottom: -322px;
+  left: 9%;
+  width: 318px;
+  height: 41px;
+  background-color: #2FA61C;
+  color: white;
+}
+#imageContainer1 #Telatigre1{
+  width: 375px;
+  border-radius: 15px;
+  border: 2px solid #04BFBF;
+}
+#imageContainer1 #barsContainer1 div{
+  background: #E7AF8C;
+  margin-top: 5px;
+  width: 300px;
+  height: 70px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid darkred;
+  border-radius: 5px;
+  
+}
+#imageContainer1 #barsContainer1 img{
+  width: 50px;
+  padding-right: 10px;
+}
+
+#barsContainer1 {
+  position: absolute;
+  top: 95%;
+  left: 10%;
+}
+
+
+
+#updateButton2 {
+  position: absolute;
+  bottom: -1391px;
+  left: 9%;
+  width: 319px;
+  height: 41.5px;
+  background-color: #2FA61C;
+  color: white;
+  font-size: 18px;
+}
+#imageContainer2 #Telatigre2{
+  width: 375px;
+  border-radius: 15px;
+  border: 2px solid #04BFBF;
+}
+#imageContainer2 #barsContainer2 div{
+  background: #E7AF8C;
+  margin-top: 5px;
+  width: 300px;
+  height: 70px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid darkred;
+  border-radius: 5px;
+  
+}
+#imageContainer2 #barsContainer2 img{
+  width: 50px;
+  padding-right: 10px;
+}
+
+#barsContainer2 {
+  position: absolute;
+  top: 1770px;
+  left: 10%;
+}
+
+
+
+
+
+
+#updateButton3 {
+  position: absolute;
+  bottom: -855px;
+  left: 9%;
+  width: 319px;
+  height: 42px;
+  background-color: #2FA61C;
+  color: white;
+  font-size: 18px;
+}
+#imageContainer3 #Telatigre3{
+  width: 375px;
+  border-radius: 15px;
+  border: 2px solid #04BFBF;
+}
+#imageContainer3 #barsContainer3 div{
+  background: #E7AF8C;
+  margin-top: 5px;
+  width: 300px;
+  height: 70px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid darkred;
+  border-radius: 5px;
+  
+}
+#imageContainer3 #barsContainer3 img{
+  width: 50px;
+  padding-right: 10px;
+}
+
+#barsContainer3 {
+  position: absolute;
+  top: 1230px;
+  left: 10%;
+}
+
+
+
+
+
+#updateButton4 {
+  position: absolute;
+  bottom: -1920px;
+  left: 9.3%;
+  width: 318px;
+  height: 40.5px;
+  background-color: #2FA61C;
+  color: white;
+  font-size: 18px;
+}
+#imageContainer4 #Telatigre4{
+  width: 375px;
+  border-radius: 15px;
+  border: 2px solid #04BFBF;
+}
+#imageContainer4 #barsContainer4 div{
+  background: #E7AF8C;
+  margin-top: 5px;
+  width: 300px;
+  height: 70px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid darkred;
+  border-radius: 5px;
+  
+}
+#imageContainer4 #barsContainer4 img{
+  width: 50px;
+  padding-right: 10px;
+}
+
+#barsContainer4 {
+  position: absolute;
+  top: 2300px;
+  left: 10%;
+}
+
+
       
 
       

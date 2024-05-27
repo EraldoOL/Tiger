@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horários do Dia</title>
+<style>
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+
+    #container {
+        width: 300px;
+        height: 350px;
+        border: 2px solid #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #horario {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .horario {
+        color: #000;
+    }
+
+    .passado {
+        color: green;
+    }
+
+    #ultimaAtualizacao {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+<div id="container">
+    <div id="horario"></div>
+    <div id="horarios"></div>
+    <div id="ultimaAtualizacao"></div>
+</div>
+
+<script>
+    function getFormattedDate() {
+        const now = new Date();
+        const day = now.getDate();
+        const month = now.getMonth() + 1;
+        const year = now.getFullYear();
+        return `${day}/${month}/${year}`;
+    }
+
+    function generateRandomTime() {
+        const hours = Math.floor(Math.random() * 24);
+        const minutes = Math.floor(Math.random() * 60);
+        return `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}`;
+    }
+
+    function sortTimes(times) {
+        return times.sort((a, b) => {
+            const [aHour, aMinute] = a.split(':').map(Number);
+            const [bHour, bMinute] = b.split(':').map(Number);
+            return aHour - bHour || aMinute - bMinute;
+        });
+    }
+
+    function updateTime() {
+        const horarioElement = document.getElementById('horario');
+        const horariosElement = document.getElementById('horarios');
+        const ultimaAtualizacaoElement = document.getElementById('ultimaAtualizacao');
+        const formattedDate = getFormattedDate();
+        horarioElement.textContent = `Horários do Dia ${formattedDate}`;
+
+        let times = JSON.parse(localStorage.getItem('horarios'));
+        if (!times || times.date !== formattedDate) {
+            times = [];
+            for (let i = 0; i < 7; i++) {
+                const row = [];
+                for (let j = 0; j < 5; j++) {
+                    const time = generateRandomTime();
+                    row.push(time);
+                }
+                times.push(row);
+            }
+            localStorage.setItem('horarios', JSON.stringify({ date: formattedDate, times }));
+            ultimaAtualizacaoElement.textContent = `Última Atualização: ${formattedDate}`;
+        }
+
+        horariosElement.innerHTML = '';
+
+        const sortedTimes = sortTimes(times.times.flat() || []);
+
+        sortedTimes.forEach(time => {
+            const horaAtual = new Date().getHours();
+            const [hora, minuto] = time.split(':');
+            const horaInt = parseInt(hora);
+            const minutoInt = parseInt(minuto);
+            const horario = document.createElement('span');
+            horario.textContent = `${hora}:${minuto}`;
+            if (horaInt < horaAtual || (horaInt === horaAtual && minutoInt < new Date().getMinutes())) {
+                horario.classList.add('passado');
+            } else {
+                horario.classList.add('horario');
+            }
+            horariosElement.appendChild(horario);
+            const space = document.createElement('span');
+            space.textContent = '     ';
+            horariosElement.appendChild(space);
+        });
+    }
+
+    updateTime(); // Chama a função updateTime() quando a página é carregada
+    setInterval(updateTime, 60000);
+</script>
+</body>
+</html>
