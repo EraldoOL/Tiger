@@ -6,7 +6,7 @@ body {
         height: 100vh;
         background-color: black;
         flex-direction: column;
-        background: url('/imgs/Facebook.jpg');
+        background: url('imgs/Facebook.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
