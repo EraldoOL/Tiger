@@ -4,47 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Horários do Dia</title>
-<style>
-    body {
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f0f0f0;
-    }
+<link rel="stylesheet" href="styles.css">
 
-    #container {
-        width: 300px;
-        height: 350px;
-        border: 2px solid #000;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-
-    #horario {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-
-    .horario {
-        color: #000;
-    }
-
-    .passado {
-        color: green;
-    }
-
-    #ultimaAtualizacao {
-        font-size: 14px;
-        margin-top: 20px;
-    }
-</style>
 </head>
 <body>
+  
+  
+  
+  <div class="cabecalho">
+    
+  <div id="Logo1">
+    <div>
+          <img src="/imgs/Logo.jpg" alt="">
+    </div>
+  </div>
+    
+    <div class="links">
+      <a href="/tabelaDeHorarios/horarios.html">Horários</a>
+      <a href="/tiger.html">Probabilidade</a>
+      <a href="/Giros/Giros.html">Roleta</a>
+    </div>
+    
+  </div>
+    
+  
+  
+  
+  
+ <!--<div id="img">
+    <img src="/imgs/Robo de Fortune.jpeg" alt="imagem">
+  </div> -->
+  
+  
+  
+  
+  
 <div id="container">
     <div id="horario"></div>
     <div id="horarios"></div>
@@ -93,7 +87,7 @@
                 times.push(row);
             }
             localStorage.setItem('horarios', JSON.stringify({ date: formattedDate, times }));
-            ultimaAtualizacaoElement.textContent = `Última Atualização: ${formattedDate}`;
+            ultimaAtualizacaoElement.textContent = `Última Atualização: ${formattedDate} , Por favor Atualize a Página`;
         }
 
         horariosElement.innerHTML = '';
