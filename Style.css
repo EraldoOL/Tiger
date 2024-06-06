@@ -10,42 +10,51 @@
   
 }
 
-.cabecalho{
- min-width: 90vw;
- max-width: 900px;
- height: 170px;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- border-radius: 10px;
- background: red;
- margin: auto;
- 
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.cabecalho .links{
- 
- margin-top: 30px;
- 
- 
+
+#Logo1 img {
+    max-width: 100%;
+    height: auto;
 }
-.cabecalho .links a{
-  margin: 40px;
-  flex-direction: row;
-  text-decoration: none;
-  color: white;
+
+.NomeLogo {
+    margin-top: 10px;
 }
-.cabecalho Logo1 div{
- margin: auto;
- 
-  
+
+.links {
+    display: fllex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+    text-decoration-color: #04BFBF;
+}
+
+.links a:hover {
+    color: #45a049;
 }
 .cabecalho img{
   width: 110px;
   border-radius: 50%;
-  border: 1px solid darkred;
+  border: 1.5px solid #04BFBF;
 }
-
 
 /*#updateButton1 {
   position: absolute;
@@ -622,41 +631,52 @@ span{
   top: 30%;
   left: 10%;
 }
-.cabecalho{
- min-width: 90vw;
- max-width: 900px;
- height: 340px;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- border-radius: 10px;
- background: #04BFBF;
- margin: auto;
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.cabecalho  .links{
- 
- margin-top: 30px;
- 
- 
+
+#Logo1 img {
+    max-width: 100%;
+    height: auto;
 }
-.cabecalho  .links a{
-  margin: 70px;
-  flex-direction: row;
-  text-decoration: none;
-  color: white;
-  font-size: 35px;
+
+.NomeLogo {
+    margin-top: 10px;
 }
-.cabecalho Logo1 div{
- margin: auto;
- 
-  
+
+.links {
+    display: fllex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+    text-decoration-color: #04BFBF;
+    font-size: 25px;
+}
+
+.links a:hover {
+    color: #45a049;
 }
 .cabecalho img{
   width: 300px;
   border-radius: 50%;
-  border: 3px solid darkred;
-  margin-top: 10px;
+  border: 1.5px solid #04BFBF;
 }
  }
     
@@ -808,7 +828,7 @@ span{
 
 #updateButton1{
   position: absolute;
-  bottom: -491px;
+  bottom: -512px;
   left: 9%;
   width: 318px;
   height: 41px;
@@ -842,7 +862,7 @@ span{
 
 #barsContainer1 {
   position: absolute;
-  top: 870px;
+  top: 880px;
   left: 10%;
 }
 
@@ -853,7 +873,7 @@ span{
 
 #updateButton2 {
   position: absolute;
-  bottom: -1561px;
+  bottom: -1581px;
   left: 9%;
   width: 319px;
   height: 41.5px;
@@ -886,7 +906,7 @@ span{
 
 #barsContainer2 {
   position: absolute;
-  top: 1950px;
+  top: 1960px;
   left: 10%;
 }
 
@@ -897,7 +917,7 @@ span{
 
 #updateButton3 {
   position: absolute;
-  bottom: -1025px;
+  bottom: -1044px;
   left: 9%;
   width: 319px;
   height: 42px;
@@ -930,7 +950,7 @@ span{
 
 #barsContainer3 {
   position: absolute;
-  top: 1400px;
+  top: 1420px;
   left: 10%;
 }
 
@@ -940,7 +960,7 @@ span{
 
 #updateButton4 {
   position: absolute;
-  bottom: -2090px;
+  bottom: -2110px;
   left: 9.3%;
   width: 318px;
   height: 40.5px;
@@ -973,42 +993,58 @@ span{
 
 #barsContainer4 {
   position: absolute;
-  top: 2475px;
+  top: 2490px;
   left: 10%;
 }
-.cabecalho{
- min-width: 90vw;
- max-width: 900px;
- height: 170px;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- border-radius: 10px;
- background: #04BFBF;
- margin: auto;
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.cabecalho  .links{
- 
- margin-top: 30px;
- 
+h1{
+  color: #04BFBF;
 }
-.cabecalho  .links a{
-  margin: 20px;
-  flex-direction: row;
-  text-decoration: none;
-  color: white;
-  font-size: 15px;
+
+#Logo1 img {
+    max-width: 100%;
+    height: auto;
 }
-.cabecalho Logo1 div{
- margin: auto;
- 
-  
+
+.NomeLogo {
+    margin-top: 10px;
+}
+
+.links {
+    display: fllex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+    text-decoration-color: #04BFBF;
+    font-size: 15px;
+}
+
+.links a:hover {
+    color: #45a049;
 }
 .cabecalho img{
   width: 110px;
   border-radius: 50%;
-  border: 1px solid darkred;
+  border: 1.5px solid #04BFBF;
 }
 
       
@@ -1353,46 +1389,57 @@ span{
   top: 30%;
   left: 10%;
 }
-.cabecalho{
- min-width: 90vw;
- max-width: 900px;
- height: 170px;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- border-radius: 10px;
- background: #04BFBF;
- margin: auto;
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.cabecalho  .links{
- 
- margin-top: 30px;
- 
+h1{
+  color: #04BFBF;
 }
-.cabecalho  .links a{
-  margin: 20px;
-  flex-direction: row;
-  text-decoration: none;
-  color: white;
-  font-size: 15px;
+
+#Logo1 img {
+    max-width: 100%;
+    height: auto;
 }
-.cabecalho Logo1 div{
- margin: auto;
- 
-  
+
+.NomeLogo {
+    margin-top: 10px;
+}
+
+.links {
+    display: fllex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+    text-decoration-color: #04BFBF;
+    font-size: 15px;
+}
+
+.links a:hover {
+    color: #45a049;
 }
 .cabecalho img{
   width: 140px;
   border-radius: 50%;
-  border: 1px solid darkred;
+  border: 1.5px solid #04BFBF;
 }
 
-
-
-
-
-  
 }
 
 
@@ -1753,50 +1800,57 @@ span{
   top: 30%;
   left: 10%;
 }
-.cabecalho{
- min-width: 90vw;
- max-width: 900px;
- height: 170px;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- border-radius: 10px;
- background: #04BFBF;
- margin: auto;
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.cabecalho  .links{
- 
- margin-top: 30px;
- 
+h1{
+  color: #04BFBF;
 }
-.cabecalho  .links a{
-  margin: 20px;
-  flex-direction: row;
-  text-decoration: none;
-  color: white;
-  font-size: 17px;
+
+#Logo1 img {
+    max-width: 100%;
+    height: auto;
 }
-.cabecalho Logo1 div{
- margin: auto;
- 
-  
+
+.NomeLogo {
+    margin-top: 10px;
+}
+
+.links {
+    display: fllex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+    text-decoration-color: #04BFBF;
+    font-size: 17px;
+}
+
+.links a:hover {
+    color: #45a049;
 }
 .cabecalho img{
   width: 140px;
   border-radius: 50%;
-  border: 1px solid darkred;
+  border: 1.5px solid #04BFBF;
 }
-
-
-
-
 }
-
-
-
-
-
 
 @media screen and (min-width: 650px) and (max-width: 750px) {
   #Logo{
@@ -2151,48 +2205,57 @@ span{
   top: 30%;
   left: 10%;
 }
-.cabecalho{
- min-width: 90vw;
- max-width: 900px;
- height: 170px;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- border-radius: 10px;
- background: #04BFBF;
- margin: auto;
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.cabecalho  .links{
- 
- margin-top: 30px;
- 
+h1{
+  color: #04BFBF;
 }
-.cabecalho  .links a{
-  margin: 20px;
-  flex-direction: row;
-  text-decoration: none;
-  color: white;
-  font-size: 19px;
+
+#Logo1 img {
+    max-width: 100%;
+    height: auto;
 }
-.cabecalho Logo1 div{
- margin: auto;
- 
-  
+
+.NomeLogo {
+    margin-top: 10px;
+}
+
+.links {
+    display: fllex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+    text-decoration-color: #04BFBF;
+    font-size: 19px;
+}
+
+.links a:hover {
+    color: #45a049;
 }
 .cabecalho img{
   width: 160px;
   border-radius: 50%;
-  border: 1px solid darkred;
+  border: 1.5px solid #04BFBF;
 }
-
-
-
-
 }
-
-
-
 
 @media screen and (min-width: 750px) and (max-width: 850px) {
   
@@ -2546,39 +2609,55 @@ span{
   top: 30%;
   left: 10%;
 }
-.cabecalho{
- min-width: 90vw;
- max-width: 900px;
- height: 170px;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- border-radius: 10px;
- background: #04BFBF;
- margin: auto;
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.cabecalho  .links{
- 
- margin-top: 30px;
- 
+h1{
+  color: #04BFBF;
 }
-.cabecalho  .links a{
-  margin: 20px;
-  flex-direction: row;
-  text-decoration: none;
-  color: white;
-  font-size: 21px;
+
+#Logo1 img {
+    max-width: 100%;
+    height: auto;
 }
-.cabecalho Logo1 div{
- margin: auto;
- 
-  
+
+.NomeLogo {
+    margin-top: 10px;
+}
+
+.links {
+    display: fllex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+    text-decoration-color: #04BFBF;
+    font-size: 20px;
+}
+
+.links a:hover {
+    color: #45a049;
 }
 .cabecalho img{
   width: 190px;
   border-radius: 50%;
-  border: 1px solid darkred;
+  border: 1.5px solid #04BFBF;
 }
 
 
@@ -2940,41 +3019,56 @@ span{
   top: 30%;
   left: 10%;
 }
-.cabecalho{
- min-width: 90vw;
- max-width: 900px;
- height: 170px;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- border-radius: 10px;
- background: #04BFBF;
- margin: auto;
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.cabecalho  .links{
- 
- margin-top: 30px;
- 
+h1{
+  color: #04BFBF;
 }
-.cabecalho  .links a{
-  margin: 20px;
-  flex-direction: row;
-  text-decoration: none;
-  color: white;
-  font-size: 23px;
+
+#Logo1 img {
+    max-width: 100%;
+    height: auto;
 }
-.cabecalho Logo1 div{
- margin: auto;
- 
-  
+
+.NomeLogo {
+    margin-top: 10px;
+}
+
+.links {
+    display: fllex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+    text-decoration-color: #04BFBF;
+    font-size: 23px;
+}
+
+.links a:hover {
+    color: #45a049;
 }
 .cabecalho img{
   width: 220px;
   border-radius: 50%;
-  border: 1px solid darkred;
+  border: 1.5px solid #04BFBF;
 }
-
 
   
 }
@@ -3337,41 +3431,55 @@ span{
   top: 30%;
   left: 10%;
 }
-.cabecalho{
- min-width: 90vw;
- max-width: 900px;
- height: 340px;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- border-radius: 10px;
- background: #04BFBF;
- margin: auto;
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.cabecalho  .links{
- 
- margin-top: 30px;
- 
- 
+h1{
+  color: #04BFBF;
 }
-.cabecalho  .links a{
-  margin: 70px;
-  flex-direction: row;
-  text-decoration: none;
-  color: white;
-  font-size: 30px;
+
+#Logo1 img {
+    max-width: 100%;
+    height: auto;
 }
-.cabecalho Logo1 div{
- margin: auto;
- 
-  
+
+.NomeLogo {
+    margin-top: 10px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+    text-decoration-color: #04BFBF;
+    font-size: 25px;
+}
+
+.links a:hover {
+    color: #45a049;
 }
 .cabecalho img{
   width: 250px;
   border-radius: 50%;
-  border: 3px solid darkred;
-  margin-top: 10px;
+  border: 1.5px solid #04BFBF;
 }
   
 }

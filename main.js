@@ -13,7 +13,7 @@ function startLoading() {
         // Gera novos números aleatórios para cada barra de progresso
         var progressBars = document.querySelectorAll('.progress-bar');
         progressBars.forEach(function(progressBar) {
-            var randomNumber = Math.floor(Math.random() * 100) + 1;
+            var randomNumber = Math.floor(Math.random() * 61) + 40;
             randomNumbers.push(randomNumber);
         });
 
@@ -33,11 +33,11 @@ function startLoading() {
             progressBar.appendChild(percentageText);
 
             // Define a cor da barra de progresso com base no número aleatório
-            if (randomNumbers[index] >= 75) {
+            if (randomNumbers[index] >= 80) {
                 progressBar.style.backgroundColor = 'green';
-            } else if (randomNumbers[index] >= 50) {
+            } else if (randomNumbers[index] >= 60) {
                 progressBar.style.backgroundColor = 'yellow';
-            } else if (randomNumbers[index] >= 25) {
+            } else if (randomNumbers[index] >= 50) {
                 progressBar.style.backgroundColor = 'orange';
             } else {
                 progressBar.style.backgroundColor = 'red';
@@ -241,7 +241,7 @@ function generateRandomNumber() {
 function generateRandomTime() {
     var now = new Date();
     var minutes = now.getMinutes();
-    var randomMinutes = Math.floor(Math.random() * 5) + 1;
+    var randomMinutes = Math.floor(Math.random() * 2) + 1;
     var newMinutes = (minutes + randomMinutes) % 60;
     var hours = now.getHours() + Math.floor((minutes + randomMinutes) / 60);
     return hours + ":" + (newMinutes < 10 ? "0" : "") + newMinutes;

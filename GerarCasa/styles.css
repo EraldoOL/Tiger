@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background: url('../imgs/Facebook.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    text-align: center;
+    background: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    width: 400px;
+}
+h1{
+  color: #04BFBF;
+  
+}
+h2{
+  color: white;
+}
+p#link{
+  color: white;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    background-color: #04BFBF;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.admin-section {
+    margin-top: 20px;
+}
+
+input[type="password"], input[type="text"] {
+    padding: 10px;
+    margin-top: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#Logo1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.NomeLogo {
+    margin-top: 10px;
+}
+
+.links {
+    display: fllex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+    text-decoration-color: #04BFBF;
+}
+
+.links a:hover {
+    color: #45a049;
+}
+.cabecalho img{
+  width: 110px;
+  border-radius: 50%;
+  border: 1.5px solid #04BFBF;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        width: 90%;
+    }
+    
+    button, input[type="password"], input[type="text"] {
+        width: calc(100% - 20px);
+        
+    }
+    .links {
+        flex-direction: column;
+    }
+
+    .links a {
+        margin: 5px 0;
+    }
+    
+
+}

@@ -12,7 +12,9 @@ body {
         background-position: center center;
         font-family: Arial, Helvetica, sans-serif;
     }
-
+    .white-text{
+      color: white;
+    }
     #container {
         width: 350px;
         
@@ -26,7 +28,7 @@ body {
         border-radius: 20px;
         background: black;
         opacity: .8;
-        
+        margin-top: 10px;
     }
 
     #horario {
@@ -118,83 +120,105 @@ body {
 }
 
 
-.cabecalho{
- min-width: 350px;
- max-width: 90vw;
- height: 170px;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- border-radius: 10px;
- background: #04BFBF;
- margin: auto;
- margin-top: 0;
- margin-bottom: 0;
- 
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.cabecalho .links{
- 
- margin-top: 30px;
- 
- 
+h1{
+  color: #04BFBF;
 }
-.cabecalho .links a{
-  margin: 20px;
-  flex-direction: row;
-  text-decoration: none;
-  color: white;
+
+#Logo1 img {
+    max-width: 100%;
+    height: auto;
 }
-.cabecalho Logo1 div{
- margin: auto;
- 
-  
+
+.NomeLogo {
+    margin-top: 10px;
+}
+
+.links {
+    display: fllex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+    text-decoration-color: #04BFBF;
+}
+
+.links a:hover {
+    color: #45a049;
 }
 .cabecalho img{
   width: 110px;
   border-radius: 50%;
-  border: 1px solid darkred;
+  border: 1.5px solid #04BFBF;
 }
-
+ 
 @media screen and (min-width: 450px) and (max-width: 550px) {
   
- .cabecalho{
- min-width: 90vw;
- max-width: 900px;
- height: 320px;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- border-radius: 10px;
- background: #04BFBF;
- margin: auto;
- margin-top: 0;
- margin-bottom: 0;
- 
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.cabecalho .links{
- 
- margin-top: 30px;
- 
- 
+h1{
+  color: #04BFBF;
 }
-.cabecalho .links a{
-  margin: 20px;
-  flex-direction: row;
-  text-decoration: none;
-  color: white;
-  font-size: 24px;
+
+#Logo1 img {
+    max-width: 100%;
+    height: auto;
 }
-.cabecalho Logo1 div{
- margin: auto;
- 
-  
+
+.NomeLogo {
+    margin-top: 10px;
+}
+
+.links {
+    display: fllex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+    text-decoration-color: #04BFBF;
+    font-size: 15px;
+}
+
+.links a:hover {
+    color: #45a049;
 }
 .cabecalho img{
-  width: 160px;
+  width: 140px;
   border-radius: 50%;
-  border: 1px solid darkred;
+  border: 1.5px solid #04BFBF;
 }
  #container{
         width: 470px;
@@ -208,7 +232,7 @@ body {
         border-radius: 20px;
         background: black;
         opacity: .8;
-        
+        margin-top: 10px;
     }
 
     #horario {
@@ -255,43 +279,54 @@ body {
 }
 }
 @media screen and (min-width: 550px) and (max-width: 650px) {
-.cabecalho{
- min-width: 90vw;
- max-width: 900px;
- height: 320px;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- border-radius: 10px;
- background: #04BFBF;
- margin: auto;
- margin-top: 0;
- margin-bottom: 0;
- 
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.cabecalho .links{
- 
- margin-top: 30px;
- 
- 
+h1{
+  color: #04BFBF;
 }
-.cabecalho .links a{
-  margin: 20px;
-  flex-direction: row;
-  text-decoration: none;
-  color: white;
-  font-size: 28px;
+
+#Logo1 img {
+    max-width: 100%;
+    height: auto;
 }
-.cabecalho Logo1 div{
- margin: auto;
- 
-  
+
+.NomeLogo {
+    margin-top: 10px;
+}
+
+.links {
+    display: fllex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+    text-decoration-color: #04BFBF;
+    font-size: 17px;
+}
+
+.links a:hover {
+    color: #45a049;
 }
 .cabecalho img{
-  width: 180px;
+  width: 140px;
   border-radius: 50%;
-  border: 1px solid darkred;
+  border: 1.5px solid #04BFBF;
 }
  #container{
         width: 490px;
@@ -305,7 +340,7 @@ body {
         border-radius: 20px;
         background: black;
         opacity: .8;
-        
+        margin-top: 10px;
     }
 
     #horario {
@@ -352,43 +387,54 @@ body {
 }
 }
 @media screen and (min-width: 650px) and (max-width: 750px) {
-.cabecalho{
- min-width: 90vw;
- max-width: 900px;
- height: 320px;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- border-radius: 10px;
- background: #04BFBF;
- margin: auto;
- margin-top: 0;
- margin-bottom: 0;
- 
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.cabecalho .links{
- 
- margin-top: 30px;
- 
- 
+h1{
+  color: #04BFBF;
 }
-.cabecalho .links a{
-  margin: 20px;
-  flex-direction: row;
-  text-decoration: none;
-  color: white;
-  font-size: 30px;
+
+#Logo1 img {
+    max-width: 100%;
+    height: auto;
 }
-.cabecalho Logo1 div{
- margin: auto;
- 
-  
+
+.NomeLogo {
+    margin-top: 10px;
+}
+
+.links {
+    display: fllex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+    text-decoration-color: #04BFBF;
+    font-size: 19px;
+}
+
+.links a:hover {
+    color: #45a049;
 }
 .cabecalho img{
-  width: 200px;
+  width: 160px;
   border-radius: 50%;
-  border: 1px solid darkred;
+  border: 1.5px solid #04BFBF;
 }
  #container{
         width: 520px;
@@ -402,7 +448,7 @@ body {
         border-radius: 20px;
         background: black;
         opacity: .8;
-        
+        margin-top: 10px;
     }
 
     #horario {
@@ -450,43 +496,54 @@ body {
 }
 
 @media screen and (min-width: 750px) and (max-width: 850px) {
-.cabecalho{
- min-width: 90vw;
- max-width: 900px;
- height: 320px;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- border-radius: 10px;
- background: #04BFBF;
- margin: auto;
- margin-top: 0;
- margin-bottom: 0;
- 
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.cabecalho .links{
- 
- margin-top: 30px;
- 
- 
+h1{
+  color: #04BFBF;
 }
-.cabecalho .links a{
-  margin: 20px;
-  flex-direction: row;
-  text-decoration: none;
-  color: white;
-  font-size: 37px;
+
+#Logo1 img {
+    max-width: 100%;
+    height: auto;
 }
-.cabecalho Logo1 div{
- margin: auto;
- 
-  
+
+.NomeLogo {
+    margin-top: 10px;
+}
+
+.links {
+    display: fllex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+    text-decoration-color: #04BFBF;
+    font-size: 20px;
+}
+
+.links a:hover {
+    color: #45a049;
 }
 .cabecalho img{
-  width: 220px;
+  width: 190px;
   border-radius: 50%;
-  border: 1px solid darkred;
+  border: 1.5px solid #04BFBF;
 }
  #container{
         width: 550px;
@@ -500,7 +557,7 @@ body {
         border-radius: 20px;
         background: black;
         opacity: .8;
-        
+        margin-top: 10px;
     }
 
     #horario {
@@ -548,43 +605,54 @@ body {
 }
 
 @media screen and (min-width: 850px) and (max-width: 950px) {
-.cabecalho{
- min-width: 90vw;
- max-width: 900px;
- height: 340px;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- border-radius: 10px;
- background: #04BFBF;
- margin: auto;
- margin-top: 0;
- margin-bottom: 0;
- 
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.cabecalho .links{
- 
- margin-top: 30px;
- 
- 
+h1{
+  color: #04BFBF;
 }
-.cabecalho .links a{
-  margin: 20px;
-  flex-direction: row;
-  text-decoration: none;
-  color: white;
-  font-size: 37px;
+
+#Logo1 img {
+    max-width: 100%;
+    height: auto;
 }
-.cabecalho Logo1 div{
- margin: auto;
- 
-  
+
+.NomeLogo {
+    margin-top: 10px;
+}
+
+.links {
+    display: fllex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+    text-decoration-color: #04BFBF;
+    font-size: 23px;
+}
+
+.links a:hover {
+    color: #45a049;
 }
 .cabecalho img{
-  width: 250px;
+  width: 220px;
   border-radius: 50%;
-  border: 1px solid darkred;
+  border: 1.5px solid #04BFBF;
 }
  #container{
         width: 580px;
@@ -598,7 +666,7 @@ body {
         border-radius: 20px;
         background: black;
         opacity: .8;
-        
+        margin-top: 15px;
     }
 
     #horario {
@@ -645,46 +713,59 @@ body {
 }
 }
 @media screen and (min-width: 950px) and (max-width: 1024px) {
- .cabecalho{
- min-width: 90vw;
- max-width: 900px;
- height: 340px;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- border-radius: 10px;
- background: #04BFBF;
- margin: auto;
- margin-top: 0;
- margin-bottom: 0;
- 
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 600px;
+    max-width: 900px;
 }
-.cabecalho .links{
- 
- margin-top: 30px;
- 
- 
+h1{
+  color: #04BFBF;
 }
-.cabecalho .links a{
-  margin: 20px;
-  flex-direction: row;
-  text-decoration: none;
-  color: white;
-  font-size: 37px;
+
+#Logo1 img {
+    max-width: 100%;
+    height: auto;
 }
-.cabecalho Logo1 div{
- margin: auto;
- 
-  
+
+.NomeLogo {
+    margin-top: 10px;
+}
+
+.links {
+    display: fllex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+    text-decoration-color: #04BFBF;
+    font-size: 25px;
+}
+
+.links a:hover {
+    color: #45a049;
 }
 .cabecalho img{
   width: 250px;
   border-radius: 50%;
-  border: 1px solid darkred;
+  border: 1.5px solid #04BFBF;
 }
  #container{
-        width: 580px;
+        width: 700px;
         height: 450px;
         border: 2px solid white;
         display: flex;
@@ -695,7 +776,7 @@ body {
         border-radius: 20px;
         background: black;
         opacity: .8;
-        
+        margin-top: 10px;
     }
 
     #horario {
@@ -708,14 +789,14 @@ body {
 
     .horario {
         color: white;
-        font-size: 37px;
+        font-size: 39px;
         margin: 5px;
         padding: 1px;
     }
 
     .passado {
         color: green;
-        font-size: 37px;
+        font-size: 39px;
         margin: 5px;
         padding: 1px;
     }
@@ -734,7 +815,113 @@ body {
 }
 
 #horarios {
-  width: 550px;
+  width: 650px;
+  height: 380px;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+}
+
+@media screen and (min-width: 1025px) {
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#Logo1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.NomeLogo {
+    margin-top: 10px;
+}
+
+.links {
+    display: fllex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+    text-decoration-color: #04BFBF;
+    font-size: 25px;
+}
+
+.links a:hover {
+    color: #45a049;
+}
+.cabecalho img{
+  width: 300px;
+  border-radius: 50%;
+  border: 1.5px solid #04BFBF;
+}
+ #container{
+        width: 720px;
+        height: 470px;
+        border: 2px solid white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        background: black;
+        opacity: .8;
+        margin-top: 10px;
+    }
+
+    #horario {
+        font-size: 37px;
+        margin-bottom: 0px;
+        margin: auto;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .horario {
+        color: white;
+        font-size: 40px;
+        margin: 5px;
+        padding: 1px;
+    }
+
+    .passado {
+        color: green;
+        font-size: 40px;
+        margin: 5px;
+        padding: 1px;
+    }
+
+    #ultimaAtualizacao {
+        font-size: 20px;
+        margin-top: 20px;
+        color: pink;
+        
+    }
+
+
+
+.container {
+  text-align: center;
+}
+
+#horarios {
+  width: 680px;
   height: 380px;
   border-radius: 10px;
   padding: 20px;
