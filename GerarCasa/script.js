@@ -2,7 +2,7 @@ document.getElementById('loginBtn').addEventListener('click', login);
 document.getElementById('updateLinkBtn').addEventListener('click', updateLink);
 
 const adminPassword = 'admin123';  // Senha para acesso administrativo
-let currentLink = localStorage.getItem('currentLink') || 'http://example.com';  // Carrega o link do localStorage ou usa o link inicial
+let currentLink = localStorage.getItem('currentLink') || 'https://paraisobets.com/?c=01748d25-5a4c-4aed-8d72-ce4c8cf8bf3d';  // Carrega o link do localStorage ou usa o link inicial
 
 function displayLink() {
     document.getElementById('link').innerText = currentLink;
