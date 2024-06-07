@@ -826,10 +826,20 @@ span{
 }
 
 
+#imageContainer1 {
+  position: relative;
+  width: 375px; /* Largura da imagem */
+  height: 100%; /* Altura da imagem */
+  padding-top: 10px;
+  margin: auto;
+  
+  
+  
+}
 #updateButton1{
   position: absolute;
-  bottom: -512px;
-  left: 9%;
+  bottom: 26px;
+  left: 7.5%;
   width: 318px;
   height: 41px;
   background-color: #2FA61C;
@@ -862,68 +872,31 @@ span{
 
 #barsContainer1 {
   position: absolute;
-  top: 880px;
+  top: 150px;
   left: 10%;
 }
 
 
 
 
-
-
-#updateButton2 {
-  position: absolute;
-  bottom: -1581px;
-  left: 9%;
-  width: 319px;
-  height: 41.5px;
-  background-color: #2FA61C;
-  color: white;
-  font-size: 18px;
-}
-#imageContainer2 #Telatigre2{
-  width: 375px;
-  border-radius: 15px;
-  border: 2px solid #04BFBF;
-}
-#imageContainer2 #barsContainer2 div{
-  background: #E7AF8C;
-  margin-top: 5px;
-  width: 300px;
-  height: 70px;
-  padding-left: 10px;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  border: 1px solid darkred;
-  border-radius: 5px;
+#imageContainer3 {
+  position: relative;
+  width: 375px; /* Largura da imagem */
+  height: 100%; /* Altura da imagem */
+  padding-top: 10px;
+  margin: auto;
+  
   
 }
-#imageContainer2 #barsContainer2 img{
-  width: 50px;
-  padding-right: 10px;
-}
-
-#barsContainer2 {
-  position: absolute;
-  top: 1960px;
-  left: 10%;
-}
-
-
-
-
-
-
 #updateButton3 {
   position: absolute;
-  bottom: -1044px;
-  left: 9%;
-  width: 319px;
-  height: 42px;
-  background-color: #2FA61C;
+  bottom: 23px;
+  left: 7%;
+  width: 322px;
+  height: 41.5px;
+  background-color: #04BFBF;
   color: white;
-  font-size: 18px;
+  
 }
 #imageContainer3 #Telatigre3{
   width: 375px;
@@ -950,23 +923,80 @@ span{
 
 #barsContainer3 {
   position: absolute;
-  top: 1420px;
+  top: 165px;
   left: 10%;
+  
 }
 
 
 
 
 
+#imageContainer2 {
+  position: relative;
+  width: 375px; /* Largura da imagem */
+  height: 100%; /* Altura da imagem */
+  padding-top: 10px;
+  margin: auto;
+}
+#updateButton2 {
+  position: absolute;
+  bottom: 25.5px;
+  left: 7.5%;
+  width: 319px;
+  height: 42px;
+  background-color: purple;
+  color: white;
+  
+}
+#imageContainer2 #Telatigre2{
+  width: 375px;
+  border-radius: 15px;
+  border: 2px solid #04BFBF;
+}
+#imageContainer2 #barsContainer2 div{
+  background: #E7AF8C;
+  margin-top: 5px;
+  width: 300px;
+  height: 70px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid purple;
+  border-radius: 5px;
+  
+}
+#imageContainer2 #barsContainer2 img{
+  width: 50px;
+  padding-right: 10px;
+}
+
+#barsContainer2 {
+  position: absolute;
+  top: 150px;
+  left: 10%;
+}
+
+
+
+
+#imageContainer4 {
+  position: relative;
+  width: 375px; /* Largura da imagem */
+  height: 100%; /* Altura da imagem */
+  padding-top: 10px;
+  margin: auto;
+}
 #updateButton4 {
   position: absolute;
-  bottom: -2110px;
-  left: 9.3%;
+  bottom: 26.3px;
+  left: 7.5%;
   width: 318px;
   height: 40.5px;
   background-color: #2FA61C;
   color: white;
-  font-size: 18px;
+  
 }
 #imageContainer4 #Telatigre4{
   width: 375px;
@@ -993,10 +1023,9 @@ span{
 
 #barsContainer4 {
   position: absolute;
-  top: 2490px;
+  top: 160px;
   left: 10%;
 }
-
 .cabecalho {
     display: flex;
     flex-direction: column;
