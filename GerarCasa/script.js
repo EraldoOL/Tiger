@@ -1,3 +1,4 @@
+const serverIP = '192.168.0.101'; // Substitua pelo endereço IP do servidor
 const adminPassword = 'admin123';  // Senha para acesso administrativo
 
 document.getElementById('loginBtn').addEventListener('click', login);
@@ -5,7 +6,7 @@ document.getElementById('updateLinkBtn').addEventListener('click', updateLink);
 
 async function fetchLink() {
     try {
-        const response = await fetch('http://localhost:3000/link');
+        const response = await fetch(`http://${serverIP}:3000/link`);
         const data = await response.json();
         displayLink(data.link);
     } catch (error) {
@@ -31,7 +32,7 @@ async function updateLink() {
     const newLink = document.getElementById('newLink').value;
     if (newLink) {
         try {
-            const response = await fetch('http://localhost:3000/link', {
+            const response = await fetch(`http://${serverIP}:3000/link`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
