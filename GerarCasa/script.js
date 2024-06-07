@@ -1,12 +1,21 @@
+const adminPassword = 'admin123';  // Senha para acesso administrativo
+
 document.getElementById('loginBtn').addEventListener('click', login);
 document.getElementById('updateLinkBtn').addEventListener('click', updateLink);
 
-const adminPassword = 'admin123';  // Senha para acesso administrativo
-let currentLink = localStorage.getItem('currentLink') || 'https://paraisobets.com/?c=01748d25-5a4c-4aed-8d72-ce4c8cf8bf3d';  // Carrega o link do localStorage ou usa o link inicial
+async function fetchLink() {
+    try {
+        const response = await fetch('http://localhost:3000/link');
+        const data = await response.json();
+        displayLink(data.link);
+    } catch (error) {
+        console.error('Erro ao buscar o link:', error);
+    }
+}
 
-function displayLink() {
-    document.getElementById('link').innerText = currentLink;
-    document.getElementById('openLinkBtn').onclick = () => window.open(currentLink, '_blank');
+function displayLink(link) {
+    document.getElementById('link').innerText = link;
+    document.getElementById('openLinkBtn').onclick = () => window.open(link, '_blank');
 }
 
 function login() {
@@ -18,17 +27,27 @@ function login() {
     }
 }
 
-function updateLink() {
+async function updateLink() {
     const newLink = document.getElementById('newLink').value;
     if (newLink) {
-        currentLink = newLink;
-        localStorage.setItem('currentLink', currentLink);
-        displayLink();
-        alert('Link atualizado com sucesso!');
+        try {
+            const response = await fetch('http://localhost:3000/link', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ link: newLink })
+            });
+            const data = await response.json();
+            alert(data.message);
+            displayLink(data.link);
+        } catch (error) {
+            console.error('Erro ao atualizar o link:', error);
+        }
     } else {
         alert('Por favor, insira um novo link.');
     }
 }
 
-// Exibe o link atual ao carregar a página
-displayLink();
+// Carrega o link ao inicializar a página
+fetchLink();
