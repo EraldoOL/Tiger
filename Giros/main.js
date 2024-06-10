@@ -535,3 +535,55 @@ updateButton4.addEventListener('click', function() {
 });
 
 
+
+
+function updateBars5() {
+    var normalBar = document.querySelector('.bar.normal5 .text');
+    var turboBar = document.querySelector('.bar.turbo5 .text');
+    var validadeBar = document.querySelector('.bar.validade5 .text');
+    var updateButton5 = document.getElementById('updateButton5');
+
+    // Atualiza os valores das barras
+    if (normalBar) {
+        var randomNumber = generateRandomNumber();
+        normalBar.textContent = "Normal: " + randomNumber + "X";
+    }
+
+    if (turboBar) {
+        var randomNumber = generateRandomNumber();
+        turboBar.textContent = "Turbo: " + randomNumber + "X";
+    }
+
+    if (validadeBar) {
+        var randomTime = generateRandomTime();
+        validadeBar.textContent = "Validade: " + randomTime;
+    }
+
+    // Desabilita o botão por 30 segundos após ser clicado
+    updateButton5.disabled = true;
+    updateButton5.style.backgroundColor = "grey"; // Define a cor de fundo como cinza
+    setTimeout(function() {
+        updateButton5.disabled = false;
+        updateButton5.style.backgroundColor = ""; // Remove a cor de fundo
+    }, 30000); // 30000 milissegundos = 30 segundos
+
+    // Atualiza o texto do botão com o tempo restante
+    var timeLeft = 30; // Tempo restante em segundos
+    updateButton5.textContent = "Próxima atualização em: " + timeLeft + "s";
+    var countdownInterval = setInterval(function() {
+        timeLeft--;
+        if (timeLeft > 0) {
+            updateButton5.textContent = "Próxima atualização em: " + timeLeft + "s";
+        } else {
+            clearInterval(countdownInterval);
+            updateButton5.textContent = "Gerar sinal";
+        }
+    }, 1000); // 1000 milissegundos = 1 segundo
+}
+
+// Adiciona um evento de clique ao botão para chamar a função updateBars
+var updateButton5 = document.getElementById('updateButton5');
+updateButton5.addEventListener('click', function() {
+    updateBars5();
+});
+
