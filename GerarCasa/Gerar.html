@@ -6,52 +6,51 @@
     <title>Gerar Link</title>
     <link rel="stylesheet" href="styles.css">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https: //fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400 ..800;1.400..800&display=swap" rel="folha de estilo">
 </head>
 <body>
   
   <div class="cabecalho">
-    
-  <div id="Logo1">
-    <div>
+    <div id="Logo1">
+      <div>
           <img src="../imgs/Logo.jpg" alt="">
+      </div>
     </div>
-  </div>
-  
-  <div class="NomeLogo">
-    <h1>Hack Influencer</h1>
-  </div>
-    
+    <div class="NomeLogo">
+      <h1>Hack Influencer</h1>
+    </div>
     <div class="links">
       <a href="../tabelaDeHorarios/horarios.html">Horários</a>
       <a href="../tiger.html">Probabilidade</a>
       <a href="../Giros/Giros.html">Combo</a>
       <a href="Gerar.html">Casa</a>
     </div>
-    
   </div>
   
-  
-  
-  
-    <div class="container">
-        <h1>Gerar Casa</h1>
-        <div id="linkContainer">
-            <p id="link"></p>
-            <button id="openLinkBtn">Abrir Link</button>
-        </div>
-        
-        <div class="admin-section">
-            <h2>Área Administrativa</h2>
-            <input type="password" id="adminPassword" placeholder="Digite a senha">
-            <button id="loginBtn">Login</button>
-            <div id="adminPanel" style="display: none;">
-                <h3>Alterar Link</h3>
-                <input type="text" id="newLink" placeholder="Novo link">
-                <button id="updateLinkBtn">Atualizar Link</button>
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
-    
+  <div class="container">
+      <h1>Gerar Casa</h1>
+      <div id="linkContainer">
+          <p id="link"></p>
+          <button id="openLinkBtn">Abrir Link</button>
+      </div>
+      <div class="admin-section">
+          <h2>Área Administrativa</h2>
+          <input type="password" id="adminPassword" placeholder="Digite a senha">
+          <button id="loginBtn">Login</button>
+          <div id="adminPanel" style="display: none;">
+              <h3>Alterar Link</h3>
+              <input type="text" id="newLink" placeholder="Novo link">
+              <button id="updateLinkBtn">Atualizar Link</button>
+          </div>
+      </div>
+  </div>
+  <!-- Script Socket.IO necessário para comunicação em tempo real -->
+  <script src="server.js"></script>
+  <!-- Seu script personalizado -->
+  <script src="script.js"></script>
 </body>
 </html>

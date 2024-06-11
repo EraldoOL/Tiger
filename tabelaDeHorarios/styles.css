@@ -37,6 +37,7 @@ body {
         margin: auto;
         color: white;
         padding-top: 10px;
+        font-family: anta;
     }
 
     .horario {
@@ -144,6 +145,9 @@ h1{
 .NomeLogo {
     margin-top: 10px;
 }
+.NomeLogo h1{
+  font-family: anta;
+}
 
 .links {
     display: fllex;
@@ -161,6 +165,7 @@ h1{
     padding: 10px;
     transition: color 0.3s;
     text-decoration-color: #04BFBF;
+    font-family: anta;
 }
 
 .links a:hover {
