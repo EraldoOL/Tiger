@@ -32,6 +32,7 @@ async function updateLink() {
     const newLink = document.getElementById('newLink').value;
     if (newLink) {
         try {
+            console.log('Tentando atualizar o link para:', newLink);
             const response = await fetch(`http://${serverIP}:3000/link`, {
                 method: 'POST',
                 headers: {
@@ -40,10 +41,15 @@ async function updateLink() {
                 body: JSON.stringify({ link: newLink })
             });
             const data = await response.json();
-            alert(data.message);
-            displayLink(data.link);
+            if (response.ok) {
+                alert(data.message);
+                displayLink(data.link);
+            } else {
+                throw new Error(data.message || 'Erro desconhecido');
+            }
         } catch (error) {
             console.error('Erro ao atualizar o link:', error);
+            alert('Erro ao atualizar o link. Veja o console para mais detalhes.');
         }
     } else {
         alert('Por favor, insira um novo link.');
