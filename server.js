@@ -3,6 +3,7 @@ const http = require('http');
 const socketIo = require('socket.io');
 const path = require('path');
 const bodyParser = require('body-parser');
+const cors = require('cors'); // Adiciona o módulo CORS
 
 const app = express();
 const server = http.createServer(app);
@@ -11,16 +12,19 @@ const io = socketIo(server);
 let currentLink = "http://example.com"; // Link inicial
 
 // Middleware para servir arquivos estáticos da pasta GerarCasa
-app.use(express.static(path.join(__dirname, 'GerarCasa')));
+app.use(express.static(path.join(__dirname, 'GerarCasa.html')));
 app.use(bodyParser.json());
+app.use(cors()); // Habilita CORS para todas as rotas
 
 // Endpoint para obter o link atual
 app.get('/link', (req, res) => {
+    console.log('Solicitação GET recebida em /link');
     res.json({ link: currentLink });
 });
 
 // Endpoint para atualizar o link
 app.post('/link', (req, res) => {
+    console.log('Solicitação POST recebida em /link', req.body);
     const { link } = req.body;
     if (link) {
         currentLink = link;

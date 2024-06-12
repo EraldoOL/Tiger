@@ -1,4 +1,4 @@
-const serverIP = '192.168.0.101';  // Endereço IP do servidor
+const serverIP = '192.168.0.100';  // Endereço IP do servidor
 const adminPassword = 'admin123';  // Senha para acesso administrativo
 
 document.getElementById('loginBtn').addEventListener('click', login);
@@ -7,6 +7,7 @@ document.getElementById('updateLinkBtn').addEventListener('click', updateLink);
 async function fetchLink() {
     try {
         const response = await fetch(`http://${serverIP}:3000/link`);
+        if (!response.ok) throw new Error('Erro na requisição: ' + response.status);
         const data = await response.json();
         displayLink(data.link);
     } catch (error) {
@@ -40,13 +41,10 @@ async function updateLink() {
                 },
                 body: JSON.stringify({ link: newLink })
             });
+            if (!response.ok) throw new Error('Erro na requisição: ' + response.status);
             const data = await response.json();
-            if (response.ok) {
-                alert(data.message);
-                displayLink(data.link);
-            } else {
-                throw new Error(data.message || 'Erro desconhecido');
-            }
+            alert(data.message);
+            displayLink(data.link);
         } catch (error) {
             console.error('Erro ao atualizar o link:', error);
             alert('Erro ao atualizar o link. Veja o console para mais detalhes.');
