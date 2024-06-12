@@ -12,7 +12,7 @@ const io = socketIo(server);
 let currentLink = "http://example.com"; // Link inicial
 
 // Middleware para servir arquivos estáticos da pasta GerarCasa
-app.use(express.static(path.join(__dirname, 'GerarCasa.html')));
+app.use(express.static(path.join(__dirname, 'Tiger', 'GerarCasa')));
 app.use(bodyParser.json());
 app.use(cors()); // Habilita CORS para todas as rotas
 
