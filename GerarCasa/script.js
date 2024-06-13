@@ -1,4 +1,4 @@
-const serverIP = '192.168.0.100';  // Endereço IP do servidor
+const serverIP = '192.168.0.101';  // Endereço IP do servidor
 const adminPassword = 'admin123';  // Senha para acesso administrativo
 
 document.getElementById('loginBtn').addEventListener('click', login);
